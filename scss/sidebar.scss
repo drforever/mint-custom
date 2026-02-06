@@ -23,12 +23,43 @@
       var(--composer-vh, var(--1dvh)) * 100 - var(--header-offset, 0px) - 3em
     );
     top: calc(var(--header-offset) + 1em);
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 
     .sidebar-container {
       border: none;
       padding: 1rem;
+      min-height: 100%;
     }
+
+    /* 自定义滚动条 */
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #e5e7eb;
+      border-radius: 2px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #d1d5db;
+    }
+  }
+}
+
+/* 捏泡泡游戏容器确保完整显示 */
+.bubble-pop-game {
+  margin: 1em 0.5em;
+  overflow: visible;
+  
+  .bubble-container {
+    min-height: 120px;
+    overflow: visible;
   }
 }
 
