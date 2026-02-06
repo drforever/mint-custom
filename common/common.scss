@@ -12,9 +12,86 @@
   --d-nav-underline-height: 0;
 }
 
+/* ========================================
+   顶部导航栏 - 参考 React 设计稿
+   背景色: #3B66F5 蓝色
+   高度: 较紧凑
+======================================== */
 .d-header {
-  height: 5em;
-  box-shadow: none;
+  height: 3.5em;
+  box-shadow: 0 4px 15px rgba(59, 102, 245, 0.1);
+  background-color: #3B66F5 !important;
+  border-bottom: none;
+}
+
+/* 导航栏内容居中对齐 */
+.d-header-wrap {
+  height: 3.5em;
+}
+
+.d-header .wrap {
+  height: 100%;
+}
+
+/* Logo 和标题颜色 */
+.d-header .title a,
+.d-header .logo-big,
+.d-header .logo-small {
+  color: #ffffff;
+}
+
+/* 导航栏图标和按钮 */
+.d-header .d-icon,
+.d-header .header-buttons .btn .d-icon {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.d-header .d-icon:hover {
+  color: #ffffff;
+}
+
+/* 导航栏按钮 */
+.d-header .header-buttons .btn,
+.d-header .btn-flat {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  padding: 0.4em 1em;
+  transition: all 0.2s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+  }
+}
+
+/* 搜索按钮 */
+.d-header .search-dropdown {
+  .d-icon {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+/* 用户头像边框 */
+.d-header .current-user .avatar {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+/* 汉堡菜单和用户菜单图标 */
+.d-header .hamburger-dropdown .d-icon,
+.d-header .header-dropdown-toggle .d-icon {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* 面板菜单样式保持原样 */
+.menu-panel {
+  background: #ffffff;
+  
+  .d-icon {
+    color: var(--primary-medium);
+  }
 }
 
 .d-header-mode .bootstrap-mode {
