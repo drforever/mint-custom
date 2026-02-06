@@ -1,3 +1,7 @@
 en:
   theme_metadata:
     description: "A minty colored theme with featured homepage categories and a search banner."
+    settings:
+      header_bg_color: "Header background color"
+      header_text_color: "Header text color"
+      header_height: "Header height"

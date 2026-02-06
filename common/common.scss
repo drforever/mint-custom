@@ -14,19 +14,24 @@
 
 /* ========================================
    顶部导航栏 - 参考 React 设计稿
-   背景色: #3B66F5 蓝色
-   高度: 较紧凑
+   支持通过 settings 配置颜色和高度
 ======================================== */
+
+// 使用多重选择器提高优先级，确保覆盖所有情况
+html body .d-header-wrap .d-header,
+html .d-header-wrap .d-header,
+.d-header-wrap .d-header,
 .d-header {
-  height: 3.5em;
+  height: $header_height;
   box-shadow: 0 4px 15px rgba(59, 102, 245, 0.1);
-  background-color: #3B66F5 !important;
-  border-bottom: none;
+  background-color: $header_bg_color !important;
+  background: $header_bg_color !important;
+  border-bottom: none !important;
 }
 
 /* 导航栏内容居中对齐 */
 .d-header-wrap {
-  height: 3.5em;
+  height: $header_height;
 }
 
 .d-header .wrap {
@@ -34,43 +39,68 @@
 }
 
 /* Logo 和标题颜色 */
+html body .d-header .title a,
+html body .d-header .title .header-title,
 .d-header .title a,
+.d-header .title .header-title,
 .d-header .logo-big,
-.d-header .logo-small {
-  color: #ffffff;
+.d-header .logo-small,
+.d-header-wrap .d-header .title a {
+  color: $header_text_color !important;
 }
 
-/* 导航栏图标和按钮 */
+/* 所有图标 - 使用最广泛的选择器 */
+html body .d-header .d-icon,
 .d-header .d-icon,
+.d-header .btn .d-icon,
+.d-header .btn-flat .d-icon,
+.d-header .header-dropdown-toggle .d-icon,
+.d-header-wrap .d-header .d-icon,
+.d-header svg.d-icon,
 .d-header .header-buttons .btn .d-icon {
-  color: rgba(255, 255, 255, 0.85);
+  color: $header_text_color !important;
+  fill: $header_text_color !important;
 }
 
 .d-header .d-icon:hover {
-  color: #ffffff;
+  color: $header_text_color !important;
 }
 
 /* 导航栏按钮 */
-.d-header .header-buttons .btn,
-.d-header .btn-flat {
-  color: rgba(255, 255, 255, 0.9);
+html body .d-header .btn,
+html body .d-header .btn-flat,
+.d-header .btn,
+.d-header .btn-flat,
+.d-header .icon,
+.d-header .header-buttons button,
+.d-header .header-buttons .btn {
+  color: rgba(255, 255, 255, 0.9) !important;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 9999px;
   padding: 0.4em 1em;
   transition: all 0.2s;
+}
 
-  &:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: #ffffff;
+/* 确保hover状态也使用固定颜色 */
+html body .d-header .btn:hover,
+html body .d-header .btn-flat:hover,
+.d-header .btn:hover,
+.d-header .btn-flat:hover,
+.d-header .icon:hover,
+.d-header .header-buttons .btn:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: $header_text_color !important;
+  
+  .d-icon {
+    color: $header_text_color !important;
   }
 }
 
 /* 搜索按钮 */
-.d-header .search-dropdown {
-  .d-icon {
-    color: rgba(255, 255, 255, 0.7);
-  }
+.d-header .search-dropdown .d-icon,
+.d-header .search-button .d-icon {
+  color: $header_text_color !important;
 }
 
 /* 用户头像边框 */
@@ -82,15 +112,65 @@
 /* 汉堡菜单和用户菜单图标 */
 .d-header .hamburger-dropdown .d-icon,
 .d-header .header-dropdown-toggle .d-icon {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.85) !important;
 }
 
-/* 面板菜单样式保持原样 */
-.menu-panel {
-  background: #ffffff;
+/* 匿名模式按钮 - 非激活状态 */
+html body .d-header .anonymous-toggle-btn,
+.d-header .anonymous-toggle-btn {
+  border-color: $header_text_color !important;
+  color: $header_text_color !important;
+  background-color: transparent !important;
+  background: transparent !important;
   
   .d-icon {
-    color: var(--primary-medium);
+    color: $header_text_color !important;
+  }
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+  }
+}
+
+/* 匿名模式按钮 - 激活状态 */
+html body .d-header .anonymous-toggle-btn.is-anonymous,
+.d-header .anonymous-toggle-btn.is-anonymous {
+  background-color: transparent !important;
+  background: transparent !important;
+  color: $header_text_color !important;
+  border: none !important;
+  
+  .d-icon {
+    color: $header_text_color !important;
+  }
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+  }
+}
+
+/* 下拉菜单箭头 */
+.d-header .anonymous-toggle-btn .d-icon-caret-down {
+  color: inherit !important;
+}
+
+/* 下拉面板保持正常颜色（不受导航栏影响） */
+.d-header .menu-panel,
+.d-header .user-menu,
+.d-header .search-menu,
+.menu-panel,
+.user-menu {
+  background-color: var(--secondary, #ffffff) !important;
+  background: var(--secondary, #ffffff) !important;
+  
+  .d-icon {
+    color: var(--primary, #333333) !important;
+  }
+  
+  a, button, .btn {
+    color: var(--primary, #333333) !important;
   }
 }
 

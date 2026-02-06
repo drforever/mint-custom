@@ -1,0 +1,7 @@
+zh_CN:
+  theme_metadata:
+    description: "清新薄荷风格主题，带有首页分类展示和搜索横幅。"
+    settings:
+      header_bg_color: "导航栏背景颜色"
+      header_text_color: "导航栏文字颜色"
+      header_height: "导航栏高度"
