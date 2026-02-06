@@ -45,7 +45,7 @@
       0 8px 60px 0 rgb(103, 151, 255, 0.1),
       0 12px 90px 0 rgb(133, 255, 103, 0.1);
     padding: 2em;
-    border-top: 8px solid var(--tertiary);
+    border-top: none;
     margin-top: 0.8em;
 
     @include mint-card-bg;
@@ -197,9 +197,9 @@ a {
   &.active {
     border-radius: var(--mint-border-radius);
     transition: all 0.3s linear;
-    background: var(--mint-color-mint);
+    background: #3B66F5;
     color: var(--secondary);
-    border: 1px solid var(--mint-color-mint);
+    border: 1px solid #3B66F5;
   }
 }
 
