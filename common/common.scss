@@ -39,13 +39,12 @@
 }
 
 .navigation-topics {
-  /* 导航栏 - 作为白色容器的顶部 */
-  .list-controls {
+  /* 导航栏容器 - 作为白色容器的顶部（只包含 类别/最新/热门/新建话题） */
+  .navigation-container {
     background: #ffffff;
     padding: 1.5em 2em;
     border-radius: var(--mint-border-radius) var(--mint-border-radius) 0 0;
-    margin-top: 0.8em;
-    margin-bottom: 0;
+    margin-top: 1em;
     box-shadow:
       0 8px 60px 0 rgb(103, 151, 255, 0.1),
       0 12px 90px 0 rgb(133, 255, 103, 0.1);
@@ -60,8 +59,7 @@
     padding: 0 2em 2em;
     border-top: none;
     margin-top: 0;
-
-    @include mint-card-bg;
+    background: #ffffff;
   }
 }
 

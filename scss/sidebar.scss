@@ -10,46 +10,54 @@
   --sidebar-text-color: #6b7280;
 }
 
-/* 侧边栏整体容器 */
-#main-outlet-wrapper {
-  .sidebar-wrapper {
+/* 侧边栏整体容器 - 强制白色背景 */
+.sidebar-wrapper,
+#main-outlet-wrapper .sidebar-wrapper,
+.d-body #main-outlet-wrapper .sidebar-wrapper {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  margin-top: 1em;
+  border-top: none;
+  border-radius: 1rem;
+  height: calc(
+    var(--composer-vh, var(--1dvh)) * 100 - var(--header-offset, 0px) - 3em
+  );
+  top: calc(var(--header-offset) + 1em);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#main-outlet-wrapper .sidebar-wrapper {
+  .sidebar-container {
+    border: none;
+    padding: 1rem;
+    min-height: 100%;
+    background: #ffffff !important;
     background-color: #ffffff !important;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.04);
-    margin-top: 1em;
-    border-top: none;
-    border-radius: 1rem;
-    height: calc(
-      var(--composer-vh, var(--1dvh)) * 100 - var(--header-offset, 0px) - 3em
-    );
-    top: calc(var(--header-offset) + 1em);
-    overflow-y: auto;
-    overflow-x: hidden;
+  }
 
-    .sidebar-container {
-      border: none;
-      padding: 1rem;
-      min-height: 100%;
-      background-color: #ffffff;
-    }
+  .sidebar-sections {
+    background: #ffffff !important;
+  }
 
-    /* 自定义滚动条 */
-    &::-webkit-scrollbar {
-      width: 4px;
-    }
+  /* 自定义滚动条 */
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
 
-    &::-webkit-scrollbar-track {
-      background: transparent;
-    }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
 
-    &::-webkit-scrollbar-thumb {
-      background: #e5e7eb;
-      border-radius: 2px;
-    }
+  &::-webkit-scrollbar-thumb {
+    background: #e5e7eb;
+    border-radius: 2px;
+  }
 
-    &::-webkit-scrollbar-thumb:hover {
-      background: #d1d5db;
-    }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #d1d5db;
   }
 }
 
