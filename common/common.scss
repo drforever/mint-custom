@@ -449,6 +449,20 @@ html body .topic-list {
 // 分类标签样式 - 淡色背景 + 深色文字
 // ============================================
 
+// 分类标签容器 - 左对齐
+html body .topic-list .badge-category__wrapper,
+html body .topic-list a.badge-category__wrapper {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+// 话题列表中分类标签行
+html body .topic-list .link-bottom-line,
+html body .topic-list .topic-category {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
 // 通用分类标签样式基础
 html body .badge-category__wrapper .badge-category .badge-category__name,
 html body .badge-wrapper .badge-category .badge-category__name,
