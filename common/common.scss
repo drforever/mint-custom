@@ -548,12 +548,12 @@ html body .badge-wrapper.box {
 // ============================================
 // 表头"活动"改为"时间动态"
 // ============================================
-html body .topic-list th.activity .full-name,
-.topic-list th.activity .full-name {
-  font-size: 0;
+html body .topic-list th.activity button,
+.topic-list th.topic-list-data.activity button {
+  font-size: 0 !important;
   
   &::after {
     content: "时间动态";
-    font-size: 14px;
+    font-size: 16px !important;
   }
 }
