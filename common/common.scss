@@ -566,3 +566,12 @@ html body .topic-list th.activity button,
     font-size: 16px !important;
   }
 }
+
+// 时间动态列宽度
+html body .topic-list th.activity,
+html body .topic-list th.topic-list-data.activity,
+html body .topic-list td.activity,
+html body .topic-list td.topic-list-data.age {
+  width: 100px !important;
+  min-width: 100px !important;
+}
