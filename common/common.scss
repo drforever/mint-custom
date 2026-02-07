@@ -575,3 +575,25 @@ html body .topic-list td.topic-list-data.age {
   width: 100px !important;
   min-width: 100px !important;
 }
+
+// ============================================
+// 轮播图和侧边栏对齐
+// ============================================
+html body #main-outlet {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+html body .homepage-carousel {
+  margin-top: 0 !important;
+}
+
+// 确保侧边栏和主内容区顶部对齐
+html body .sidebar-wrapper {
+  padding-top: 0 !important;
+}
+
+html body #d-sidebar {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
