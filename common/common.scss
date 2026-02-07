@@ -495,29 +495,29 @@ html body a.badge-category__wrapper .badge-category .badge-category__name {
 // 吐槽专区 (黄色系) - category-id: 8
 html body .badge-category[data-category-id="8"] .badge-category__name,
 html body a.badge-category__wrapper .badge-category[data-category-id="8"] .badge-category__name {
-  background-color: rgba(255, 193, 7, 0.15) !important;
-  color: #D4A106 !important;
+  background-color: rgba(255, 193, 7, 0.08) !important;
+  color: #C9A227 !important;
 }
 
 // 技术交流 (粉红色系) - category-id: 5
 html body .badge-category[data-category-id="5"] .badge-category__name,
 html body a.badge-category__wrapper .badge-category[data-category-id="5"] .badge-category__name {
-  background-color: rgba(255, 182, 193, 0.3) !important;
-  color: #E85A71 !important;
+  background-color: rgba(255, 182, 193, 0.15) !important;
+  color: #D4909A !important;
 }
 
 // 提问互助 (蓝色系) - category-id: 6
 html body .badge-category[data-category-id="6"] .badge-category__name,
 html body a.badge-category__wrapper .badge-category[data-category-id="6"] .badge-category__name {
-  background-color: rgba(100, 181, 246, 0.2) !important;
-  color: #1976D2 !important;
+  background-color: rgba(100, 181, 246, 0.1) !important;
+  color: #7BAFD4 !important;
 }
 
 // 生活分享 (绿色系) - category-id: 7
 html body .badge-category[data-category-id="7"] .badge-category__name,
 html body a.badge-category__wrapper .badge-category[data-category-id="7"] .badge-category__name {
-  background-color: rgba(129, 199, 132, 0.2) !important;
-  color: #388E3C !important;
+  background-color: rgba(129, 199, 132, 0.1) !important;
+  color: #7DB881 !important;
 }
 
 // 隐藏分类图标和bullet圆点
