@@ -449,40 +449,64 @@ html body .topic-list {
 html body .badge-category-parent-box .badge-category[data-category-name="吐槽专区"],
 html body .badge-category[data-category-name="吐槽专区"],
 html body .badge-wrapper .badge-category__name[data-category-name="吐槽专区"],
-html body span.badge-category[data-category-name="吐槽专区"] {
-  background-color: rgba(243, 210, 80, 0.1) !important; // bg-[#F3D250]/10
-  color: #F3D250 !important; // text-[#F3D250]
+html body span.badge-category[data-category-name="吐槽专区"],
+html body .badge-category__wrapper .badge-category__name[data-category-name="吐槽专区"],
+.badge-wrapper[data-categories*="吐槽专区"] .badge-category__name {
+  background-color: rgba(255, 193, 7, 0.15) !important;
+  color: #D4A106 !important;
   border: none !important;
+  padding: 4px 12px !important;
+  border-radius: 6px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
 }
 
 // 特定分类标签颜色 - 技术交流 (粉红色系)
 html body .badge-category-parent-box .badge-category[data-category-name="技术交流"],
 html body .badge-category[data-category-name="技术交流"],
 html body .badge-wrapper .badge-category__name[data-category-name="技术交流"],
-html body span.badge-category[data-category-name="技术交流"] {
-  background-color: rgba(247, 136, 136, 0.1) !important; // bg-[#F78888]/10
-  color: #F78888 !important; // text-[#F78888]
+html body span.badge-category[data-category-name="技术交流"],
+html body .badge-category__wrapper .badge-category__name[data-category-name="技术交流"],
+.badge-wrapper[data-categories*="技术交流"] .badge-category__name {
+  background-color: rgba(255, 182, 193, 0.3) !important;
+  color: #E85A71 !important;
   border: none !important;
+  padding: 4px 12px !important;
+  border-radius: 6px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
 }
 
 // 特定分类标签颜色 - 提问互助 (蓝色系)
 html body .badge-category-parent-box .badge-category[data-category-name="提问互助"],
 html body .badge-category[data-category-name="提问互助"],
 html body .badge-wrapper .badge-category__name[data-category-name="提问互助"],
-html body span.badge-category[data-category-name="提问互助"] {
-  background-color: rgba(144, 204, 244, 0.1) !important; // bg-[#90CCF4]/10
-  color: #90CCF4 !important; // text-[#90CCF4]
+html body span.badge-category[data-category-name="提问互助"],
+html body .badge-category__wrapper .badge-category__name[data-category-name="提问互助"],
+.badge-wrapper[data-categories*="提问互助"] .badge-category__name {
+  background-color: rgba(100, 181, 246, 0.2) !important;
+  color: #1976D2 !important;
   border: none !important;
+  padding: 4px 12px !important;
+  border-radius: 6px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
 }
 
 // 特定分类标签颜色 - 生活分享 (绿色系)
 html body .badge-category-parent-box .badge-category[data-category-name="生活分享"],
 html body .badge-category[data-category-name="生活分享"],
 html body .badge-wrapper .badge-category__name[data-category-name="生活分享"],
-html body span.badge-category[data-category-name="生活分享"] {
-  background-color: rgba(144, 238, 144, 0.15) !important; // bg-[#90EE90]/15
-  color: #5CB85C !important; // text-[#5CB85C] 深绿色文字
+html body span.badge-category[data-category-name="生活分享"],
+html body .badge-category__wrapper .badge-category__name[data-category-name="生活分享"],
+.badge-wrapper[data-categories*="生活分享"] .badge-category__name {
+  background-color: rgba(129, 199, 132, 0.2) !important;
+  color: #388E3C !important;
   border: none !important;
+  padding: 4px 12px !important;
+  border-radius: 6px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
 }
 
 // 分类标签通用样式覆盖
