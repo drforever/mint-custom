@@ -589,6 +589,7 @@ html body #main-outlet-wrapper {
 html body .sidebar-wrapper {
   padding-top: 0 !important;
   margin-top: 0 !important;
+  border-top: 1px solid var(--primary-low) !important;
 }
 
 html body #d-sidebar,
