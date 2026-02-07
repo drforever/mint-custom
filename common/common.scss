@@ -217,24 +217,30 @@ html body .list-controls .category-breadcrumb,
   }
 }
 
+// 导航标签 - 胶囊按钮样式
 .nav-pills li a {
-  border: 1px solid transparent;
-  border-radius: var(--mint-border-radius);
+  border: none;
+  border-radius: 20px;
+  padding: 8px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666666;
+  background: transparent;
+  transition: all 0.2s ease;
 
   &:hover {
-    border-radius: var(--mint-border-radius);
-    transition: all 0.3s linear;
-    background-color: transparent;
-    color: var(--tertiary);
-    border: 1px dashed var(--tertiary);
+    border-radius: 20px;
+    background-color: rgba(59, 102, 245, 0.1);
+    color: #3B66F5;
+    border: none;
   }
 
   &.active {
-    border-radius: var(--mint-border-radius);
-    transition: all 0.3s linear;
+    border-radius: 20px;
     background: #3B66F5;
-    color: var(--secondary);
-    border: 1px solid #3B66F5;
+    color: #ffffff !important;
+    border: none;
+    box-shadow: 0 2px 8px rgba(59, 102, 245, 0.3);
   }
 }
 
