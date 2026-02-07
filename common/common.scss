@@ -607,6 +607,7 @@ html body #main-outlet-wrapper {
 }
 
 // 隐藏话题底部按钮
-.topic-footer-buttons {
-  display: none;
+.topic-footer-buttons,
+#topic-footer-buttons {
+  display: none !important;
 }
