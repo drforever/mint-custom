@@ -407,14 +407,23 @@ html body .topic-list tr.topic-list-item {
   height: auto;
 
   td {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
   }
 }
 
 html body .topic-list .main-link {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+// 标题和标签行之间的间距
+html body .topic-list .link-top-line {
+  margin-bottom: 8px !important;
+}
+
+html body .topic-list .link-bottom-line {
+  margin-top: 8px !important;
 }
 
 // 话题列表样式优化 - 参考示例代码
