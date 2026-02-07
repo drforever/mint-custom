@@ -579,17 +579,13 @@ html body .topic-list td.topic-list-data.age {
 // ============================================
 // 轮播图和侧边栏对齐
 // ============================================
-// 主内容区恢复正常上边距
-html body #main-outlet {
+// main-outlet-wrapper 统一上边距
+html body #main-outlet-wrapper {
   padding-top: 20px !important;
+  align-items: flex-start !important;
 }
 
-// 轮播图上边距
-html body .homepage-carousel {
-  margin-top: 0 !important;
-}
-
-// 侧边栏容器 - 让 sidebar-container 与轮播图顶部对齐
+// 侧边栏容器 - 让 sidebar-wrapper 与轮播图顶部对齐
 html body .sidebar-wrapper {
   padding-top: 0 !important;
   margin-top: 0 !important;
@@ -601,9 +597,15 @@ html body .sidebar-container {
   margin-top: 0 !important;
 }
 
-// main-outlet-wrapper 的子元素对齐
-html body #main-outlet-wrapper {
-  padding-top: 20px !important;
+// main-outlet 清除额外边距
+html body #main-outlet {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+// 轮播图上边距
+html body .homepage-carousel {
+  margin-top: 0 !important;
 }
 
 // 隐藏话题底部按钮
