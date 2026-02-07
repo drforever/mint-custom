@@ -164,6 +164,38 @@ a {
   margin-top: 1em;
 }
 
+// ============================================
+// 导航栏"类别"改为"动态话题"
+// ============================================
+html body .list-controls .category-breadcrumb,
+.list-controls .category-breadcrumb {
+  // 隐藏原有的类别下拉框
+  li:first-child {
+    position: relative;
+    
+    // 隐藏下拉框内容
+    .select-kit.combo-box.category-drop {
+      visibility: hidden !important;
+      width: 0 !important;
+      min-width: 0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      overflow: hidden !important;
+    }
+    
+    // 用伪元素显示"动态话题"
+    &::before {
+      content: "动态话题";
+      display: inline-block;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #333333;
+      padding-right: 16px;
+      white-space: nowrap;
+    }
+  }
+}
+
 .list-controls .combo-box .combo-box-header {
   border: none;
   border-radius: var(--mint-border-radius);
