@@ -118,27 +118,31 @@ a {
   background: var(--primary-very-low);
 }
 
+// 新建话题按钮 - 胶囊样式
 #create-topic {
-  color: var(--secondary);
-  background: var(--tertiary);
-  transition: all 0.3s linear;
-  border-radius: var(--mint-border-radius);
-  text-transform: uppercase;
-  border: 2px solid var(--tertiary);
+  color: #ffffff;
+  background: #3B66F5;
+  transition: all 0.2s ease;
+  border-radius: 20px;
+  text-transform: none;
+  border: none;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(59, 102, 245, 0.3);
 
-  .fa {
-    color: var(--secondary);
+  .d-icon, .fa {
+    color: #ffffff;
   }
 
   &:hover {
-    background: var(--tertiary);
-    color: var(--secondary);
-    box-shadow: var(--mint-hover-shadow);
-    transition: all 0.3s linear;
-    border-radius: var(--mint-border-radius);
+    background: #2952d9;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(59, 102, 245, 0.4);
+    border-radius: 20px;
 
-    .fa {
-      color: var(--secondary);
+    .d-icon, .fa {
+      color: #ffffff;
     }
   }
 }
