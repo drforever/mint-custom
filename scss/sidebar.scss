@@ -10,6 +10,14 @@
   --sidebar-text-color: #6b7280;
 }
 
+/* 最外层侧边栏容器 */
+#d-sidebar,
+.sidebar-container,
+section#d-sidebar.sidebar-container {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+}
+
 /* 侧边栏整体容器 */
 #main-outlet-wrapper {
   .sidebar-wrapper {
@@ -30,6 +38,7 @@
       border: none;
       padding: 1rem;
       min-height: 100%;
+      background-color: #ffffff;
     }
 
     /* 自定义滚动条 */
