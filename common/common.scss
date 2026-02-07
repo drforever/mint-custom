@@ -463,6 +463,14 @@ html body .topic-list .topic-category {
   margin-left: 0 !important;
 }
 
+// 外层 badge-category span 移除左边距
+html body .topic-list .badge-category,
+html body .topic-list span.badge-category,
+html body .topic-list .badge-category--style-icon {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
 // 通用分类标签样式基础
 html body .badge-category__wrapper .badge-category .badge-category__name,
 html body .badge-wrapper .badge-category .badge-category__name,
