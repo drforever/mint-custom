@@ -605,3 +605,8 @@ html body .sidebar-container {
 html body #main-outlet-wrapper {
   padding-top: 20px !important;
 }
+
+// 隐藏话题底部按钮
+.topic-footer-buttons {
+  display: none;
+}
