@@ -544,3 +544,16 @@ html body .badge-wrapper.box {
     display: none;
   }
 }
+
+// ============================================
+// 表头"活动"改为"时间动态"
+// ============================================
+html body .topic-list th.activity .full-name,
+.topic-list th.activity .full-name {
+  font-size: 0;
+  
+  &::after {
+    content: "时间动态";
+    font-size: 14px;
+  }
+}
