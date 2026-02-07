@@ -579,21 +579,29 @@ html body .topic-list td.topic-list-data.age {
 // ============================================
 // 轮播图和侧边栏对齐
 // ============================================
+// 主内容区恢复正常上边距
 html body #main-outlet {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
+  padding-top: 20px !important;
 }
 
+// 轮播图上边距
 html body .homepage-carousel {
   margin-top: 0 !important;
 }
 
-// 确保侧边栏和主内容区顶部对齐
+// 侧边栏容器 - 让 sidebar-container 与轮播图顶部对齐
 html body .sidebar-wrapper {
   padding-top: 0 !important;
+  margin-top: 0 !important;
 }
 
-html body #d-sidebar {
+html body #d-sidebar,
+html body .sidebar-container {
   padding-top: 0 !important;
   margin-top: 0 !important;
+}
+
+// main-outlet-wrapper 的子元素对齐
+html body #main-outlet-wrapper {
+  padding-top: 20px !important;
 }
