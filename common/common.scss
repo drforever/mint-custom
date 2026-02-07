@@ -445,68 +445,54 @@ html body .topic-list {
   }
 }
 
-// 特定分类标签颜色 - 吐槽专区 (黄色系)
-html body .badge-category-parent-box .badge-category[data-category-name="吐槽专区"],
-html body .badge-category[data-category-name="吐槽专区"],
-html body .badge-wrapper .badge-category__name[data-category-name="吐槽专区"],
-html body span.badge-category[data-category-name="吐槽专区"],
-html body .badge-category__wrapper .badge-category__name[data-category-name="吐槽专区"],
-.badge-wrapper[data-categories*="吐槽专区"] .badge-category__name {
+// ============================================
+// 分类标签样式 - 淡色背景 + 深色文字
+// ============================================
+
+// 通用分类标签样式基础
+html body .badge-category__wrapper .badge-category .badge-category__name,
+html body .badge-wrapper .badge-category .badge-category__name,
+html body a.badge-category__wrapper .badge-category .badge-category__name {
+  padding: 4px 12px !important;
+  border-radius: 6px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  display: inline-block !important;
+}
+
+// 吐槽专区 (黄色系) - category-id: 8
+html body .badge-category[data-category-id="8"] .badge-category__name,
+html body a.badge-category__wrapper .badge-category[data-category-id="8"] .badge-category__name {
   background-color: rgba(255, 193, 7, 0.15) !important;
   color: #D4A106 !important;
-  border: none !important;
-  padding: 4px 12px !important;
-  border-radius: 6px !important;
-  font-size: 12px !important;
-  font-weight: 500 !important;
 }
 
-// 特定分类标签颜色 - 技术交流 (粉红色系)
-html body .badge-category-parent-box .badge-category[data-category-name="技术交流"],
-html body .badge-category[data-category-name="技术交流"],
-html body .badge-wrapper .badge-category__name[data-category-name="技术交流"],
-html body span.badge-category[data-category-name="技术交流"],
-html body .badge-category__wrapper .badge-category__name[data-category-name="技术交流"],
-.badge-wrapper[data-categories*="技术交流"] .badge-category__name {
+// 技术交流 (粉红色系) - category-id: 5
+html body .badge-category[data-category-id="5"] .badge-category__name,
+html body a.badge-category__wrapper .badge-category[data-category-id="5"] .badge-category__name {
   background-color: rgba(255, 182, 193, 0.3) !important;
   color: #E85A71 !important;
-  border: none !important;
-  padding: 4px 12px !important;
-  border-radius: 6px !important;
-  font-size: 12px !important;
-  font-weight: 500 !important;
 }
 
-// 特定分类标签颜色 - 提问互助 (蓝色系)
-html body .badge-category-parent-box .badge-category[data-category-name="提问互助"],
-html body .badge-category[data-category-name="提问互助"],
-html body .badge-wrapper .badge-category__name[data-category-name="提问互助"],
-html body span.badge-category[data-category-name="提问互助"],
-html body .badge-category__wrapper .badge-category__name[data-category-name="提问互助"],
-.badge-wrapper[data-categories*="提问互助"] .badge-category__name {
+// 提问互助 (蓝色系) - category-id: 6
+html body .badge-category[data-category-id="6"] .badge-category__name,
+html body a.badge-category__wrapper .badge-category[data-category-id="6"] .badge-category__name {
   background-color: rgba(100, 181, 246, 0.2) !important;
   color: #1976D2 !important;
-  border: none !important;
-  padding: 4px 12px !important;
-  border-radius: 6px !important;
-  font-size: 12px !important;
-  font-weight: 500 !important;
 }
 
-// 特定分类标签颜色 - 生活分享 (绿色系)
-html body .badge-category-parent-box .badge-category[data-category-name="生活分享"],
-html body .badge-category[data-category-name="生活分享"],
-html body .badge-wrapper .badge-category__name[data-category-name="生活分享"],
-html body span.badge-category[data-category-name="生活分享"],
-html body .badge-category__wrapper .badge-category__name[data-category-name="生活分享"],
-.badge-wrapper[data-categories*="生活分享"] .badge-category__name {
+// 生活分享 (绿色系) - category-id: 7
+html body .badge-category[data-category-id="7"] .badge-category__name,
+html body a.badge-category__wrapper .badge-category[data-category-id="7"] .badge-category__name {
   background-color: rgba(129, 199, 132, 0.2) !important;
   color: #388E3C !important;
-  border: none !important;
-  padding: 4px 12px !important;
-  border-radius: 6px !important;
-  font-size: 12px !important;
-  font-weight: 500 !important;
+}
+
+// 隐藏分类图标和bullet圆点
+html body .badge-category__wrapper .badge-category .badge-category-bg,
+html body .badge-category__wrapper .badge-category .d-icon,
+html body .badge-category__wrapper .badge-category svg {
+  display: none !important;
 }
 
 // 分类标签通用样式覆盖
