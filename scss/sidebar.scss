@@ -6,6 +6,7 @@
   --d-sidebar-highlight-background: rgba(59, 102, 245, 0.1);
   --d-sidebar-highlight-hover-background: #f9fafb;
   --d-sidebar-header-icon-color: #3B66F5;
+  --d-sidebar-background: #ffffff;
   --sidebar-active-color: #3B66F5;
   --sidebar-text-color: #6b7280;
 }
@@ -21,7 +22,8 @@ section#d-sidebar.sidebar-container {
 /* 侧边栏整体容器 */
 #main-outlet-wrapper {
   .sidebar-wrapper {
-    background-color: #ffffff;
+    background-color: #ffffff !important;
+    background: #ffffff !important;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(0, 0, 0, 0.04);
     margin-top: 1em;
@@ -38,7 +40,8 @@ section#d-sidebar.sidebar-container {
       border: none;
       padding: 1rem;
       min-height: 100%;
-      background-color: #ffffff;
+      background-color: #ffffff !important;
+      background: #ffffff !important;
     }
 
     /* 自定义滚动条 */
