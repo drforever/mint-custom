@@ -636,3 +636,11 @@ html body .homepage-carousel {
     color: #666666 !important;
   }
 }
+
+// 用户资料页顶部蓝色边框去除
+.user-main .about.collapsed-info,
+.user-main .about,
+.user-card,
+.user-profile-primary-outlet {
+  border-top: none !important;
+}
