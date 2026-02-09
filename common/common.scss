@@ -657,3 +657,8 @@ html body #main-outlet,
 .user-activity-page .viewing-self {
   border-top: none !important;
 }
+
+// 隐藏侧边栏底部
+.sidebar-footer-wrapper {
+  display: none;
+}
