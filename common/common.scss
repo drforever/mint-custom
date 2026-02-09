@@ -408,23 +408,23 @@ html body .topic-list tr.topic-list-item {
   height: auto;
 
   td {
-    padding-top: 16px !important;
-    padding-bottom: 16px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
   }
 }
 
 html body .topic-list .main-link {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 // 标题和标签行之间的间距
 html body .topic-list .link-top-line {
-  margin-bottom: 6px !important;
+  margin-bottom: 4px !important;
 }
 
 html body .topic-list .link-bottom-line {
-  margin-top: 6px !important;
+  margin-top: 4px !important;
 }
 
 // 话题列表样式优化 - 参考示例代码
