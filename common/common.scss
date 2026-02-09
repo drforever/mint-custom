@@ -402,29 +402,29 @@ summary.select-kit-header.single-select-header.dropdown-select-box-header {
   }
 }
 
-// 增加话题列表行高度
+// 话题列表行高度
 html body .topic-list .topic-list-item,
 html body .topic-list tr.topic-list-item {
   height: auto;
 
   td {
-    padding-top: 24px !important;
-    padding-bottom: 24px !important;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
   }
 }
 
 html body .topic-list .main-link {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 // 标题和标签行之间的间距
 html body .topic-list .link-top-line {
-  margin-bottom: 8px !important;
+  margin-bottom: 6px !important;
 }
 
 html body .topic-list .link-bottom-line {
-  margin-top: 8px !important;
+  margin-top: 6px !important;
 }
 
 // 话题列表样式优化 - 参考示例代码
