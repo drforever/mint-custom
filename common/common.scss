@@ -644,3 +644,16 @@ html body .homepage-carousel {
 .user-profile-primary-outlet {
   border-top: none !important;
 }
+
+// main-outlet 顶部蓝色边框去除
+html body #main-outlet,
+#main-outlet {
+  border-top: none !important;
+}
+
+// 用户资料页容器边框去除
+.user-activity-page #main-outlet,
+.user-activity-page .container,
+.user-activity-page .viewing-self {
+  border-top: none !important;
+}
